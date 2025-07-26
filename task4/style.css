@@ -1,0 +1,135 @@
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient( #f2f7f8, #b5d0e6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Main Weather Container */
+.weather-box {
+  background: rgba(38, 105, 138, 0.2);
+  padding: 25px;
+  border-radius: 12px;
+  text-align: center;
+  max-width: 500px;
+  width: 95%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Heading */
+h4 {
+  color: #000000;
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+/* Input and Button Row */
+.input-section {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Input field */
+.cityName {
+  padding: 12px;
+  flex: 1;
+  font-size: 16px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  background-color: #fff;
+  min-width: 180px;
+}
+
+/* Button */
+.btn {
+  padding: 12px 20px;
+  font-size: 16px;
+  background-color: #022b60;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+/* Current Weather Info */
+.weatherText {
+  margin-top: 15px;
+  font-size: 26px;
+  color: #222;
+  font-weight: bold;
+}
+
+.weatherCondition {
+  font-size: 18px;
+  color: #000000;
+  margin-top: 5px;
+}
+
+/* Weather icon */
+.weatherIcon {
+  display: block;
+  margin: 15px auto;
+  width: 100px;
+}
+
+/* Forecast Section */
+.forecast-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 20px 0 10px;
+  color: #000000;
+}
+
+.forecast {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.forecast-card {
+  background: rgba(255, 255, 255, 0.3);
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+  width: 60px;
+}
+
+.forecast-card img {
+  width: 45px;
+}
+
+.forecast-card p {
+  margin: 5px 0;
+  font-size: 14px;
+  color: #222;
+}
+
+/* Responsive for mobile */
+@media (max-width: 500px) {
+  .cityName, .btn {
+    width: 100%;
+  }
+  .forecast {
+    justify-content: center;
+  }
+}

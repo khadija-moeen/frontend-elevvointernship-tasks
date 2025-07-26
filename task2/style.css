@@ -1,0 +1,107 @@
+/* #contactForm{
+     width: 90%;
+  max-width: 700px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #FFF2F0;
+  border: 1px solid #FFCCC9;
+  border-radius: 8px;
+}
+h1{
+   font-weight: bold;
+   margin-top: 50px;
+}
+label{
+  display: block;
+  margin: 10px auto 5px auto;
+  width: 350px;
+  font-weight: bold;
+  font-family: Arial;
+  color: #000000;
+
+}
+input {
+  display: block;
+  margin: 0 auto 15px auto;
+  width: 350px;
+  height: 30px;
+  padding: 5px;
+  border-style: double;
+  border-radius: 6px;
+}
+ */
+/* Apply base styles to the body */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+/* Style the entire form */
+form#contactForm {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  width: 120%;
+}
+
+/* Headline */
+form h1 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #333;
+}
+
+/* Labels */
+label {
+  font-weight: bold;
+  color: #444;
+}
+
+/* Inputs and textarea */
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px 12px;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+/* Submit button */
+button#button {
+  background-color: #0066cc;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  width: 50%;
+  cursor: pointer;
+  font-size: 16px;
+  margin-left: 110px;
+}
+
+button#button:hover {
+  background-color: #004c99;
+}
+
+/* Message placeholder (optional styling) */
+#msg {
+  color: red;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  form#contactForm {
+    padding: 20px;
+  }
+}
